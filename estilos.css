@@ -1,0 +1,131 @@
+/* Estilos sencillos para la página */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Desplazamiento suave al hacer clic en los enlaces */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1d28;
+    color: white;
+}
+
+/* El header completo se queda fijo al hacer scroll */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #134e5e;
+    color: white;
+    text-align: center;
+    border-bottom: 3px solid #71b280;
+}
+
+.header-info {
+    padding: 15px 20px 10px 20px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+/* Menú de navegación dentro del header */
+nav {
+    background-color: #cccccc;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #71b280;
+}
+
+nav a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* Contenedor central */
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Margen superior para que el header fijo no tape las secciones al hacer clic */
+section {
+    scroll-margin-top: 170px;
+}
+
+h2 {
+    color: #71b280;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilo de cuadros de texto con animación al pasar el cursor */
+.caja {
+    background-color: #134e5e;
+    border: 2px solid #71b280;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Movimiento hacia arriba al pasar el mouse por la caja */
+.caja:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 5px 15px rgba(113, 178, 128, 0.4);
+}
+
+.caja h3 {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+ul {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+/* Estilos básicos para el formulario */
+form {
+    background-color: #0e3a47;
+    padding: 15px;
+    border: 1px solid white;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+select, 
+textarea {
+    width: 90%;
+    padding: 5px;
+    margin-top: 3px;
+}
+
+input[type="submit"], 
+input[type="reset"] {
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #134e5e;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 2px solid #71b280;
+}
